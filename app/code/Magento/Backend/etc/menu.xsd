@@ -96,11 +96,11 @@
     <xs:simpleType name="typeAction">
         <xs:annotation>
             <xs:documentation>
-                Item action attribute can has only [a-zA-Z0-9/_]. Minimal length 3 symbol
+                Item action attribute can has only [a-zA-Z0-9/_\-]. Minimal length 1 symbol
             </xs:documentation>
         </xs:annotation>
         <xs:restriction base="xs:string">
-            <xs:pattern value="[a-zA-Z0-9/_]{3,}" />
+            <xs:pattern value="[a-zA-Z0-9/_\-]{3,}" />
         </xs:restriction>
     </xs:simpleType>
 
